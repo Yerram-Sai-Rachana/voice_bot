@@ -54,7 +54,7 @@ def takeCommand():
 
     try:
         print("Recognizing....")
-        query = r.recognize_google(audio, language='en-in')
+        query = r.recognize_google(audio, language='en-in') #method on it to access the Google web speech API and turn spoken language into text.
         print(query)
 
     except Exception as e:
