@@ -109,7 +109,7 @@ if __name__ == "__main__":
                 print("No module name google found")
             speak("searching...")
             query = query.replace("google","")
-            for j in search(query, tld="co.in", num=2, stop=2, pause=2):
+            for j in search(query, tld="co.in", num=2, stop=2, pause=2): #num-Number of results we want.
                 print(j)
                 speak(j)
         elif 'send email' in query:
